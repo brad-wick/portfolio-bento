@@ -9,7 +9,7 @@ export default function Contact() {
     'p-3 rounded-xl border-2 border-black border-solid transition hover:bg-violet-200 hover:scale-110'
 
   return (
-    <section className='col-start-4 row-start-1 col-span-4 row-span-1 rounded-xl bg-white shadow-xl'>
+    <section className='box-base-css p-5 mb-5 sm:col-start-4 sm:row-start-1 sm:col-span-4 sm:row-span-1'>
       <div className='flex flex-row items-center justify-center h-full gap-5 text-center'>
         <a
           className={style}
@@ -30,7 +30,7 @@ export default function Contact() {
         <Link className={style} href='mailto:bradflores.dev@gmail.com'>
           <HiOutlineMail className='text-3xl' />
         </Link>
-        <a className={style} href='/CV.pdf' download>
+        <a className={style} href='/cv.pdf' download>
           <LuDownload className='text-3xl' />
         </a>
       </div>

@@ -24,9 +24,14 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='en'>
+    <html lang='en' className='scroll-smooth'>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} h-screen w-full flex items-center justify-center bg-gray-200`}
+        className={`${geistSans.variable} ${geistMono.variable} h-screen w-full flex items-center justify-center bg-gray-100 relative`}
+        style={{
+          backgroundSize: '40px 40px',
+          backgroundImage:
+            'linear-gradient(to right, #c4b5fd 1px, transparent 1px), linear-gradient(to bottom, #c4b5fd 1px, transparent 1px)',
+        }}
       >
         {children}
       </body>

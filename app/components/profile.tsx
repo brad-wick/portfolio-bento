@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
-import profilePicture from '@/app/public/brad-profile-bw.png'
+import profilePicture from '@/public/brad-profile-bw.png'
 
 export default function Profile() {
   return (
-    <section className='col-start-1 row-start-1 col-span-3 row-span-3 rounded-xl bg-white shadow-xl select-none'>
+    <section className='box-base-css select-none p-5 mb-5 sm:col-start-1 sm:row-start-1 sm:col-span-3 sm:row-span-3'>
       <div className='flex flex-col items-center justify-center h-full gap-4 text-center'>
         <div className='relative'>
           <Image
@@ -19,9 +19,9 @@ export default function Profile() {
           />
           <div className='absolute bottom-0 right-1 text-5xl'>👋</div>
         </div>
-        <h1 className='text-3xl font-bold'>
+        <h1 className='text-3xl font-semibold'>
           Hi, I&apos;m
-          <span className='text-violet-500'> Bradley</span>
+          <span className='font-bold text-violet-500'> Bradley</span>
         </h1>
       </div>
     </section>
