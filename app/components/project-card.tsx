@@ -26,7 +26,7 @@ export default function ProjectCard({
   }
 
   return (
-    <section className='p-3 cursor-pointer border-2 border-black rounded-xl border-solid transition hover:bg-violet-200 snap-start'>
+    <section className='group p-3 cursor-pointer border-2 border-black rounded-xl border-solid transition hover:bg-violet-200 snap-start'>
       <div
         className='flex items-start gap-2 overflow-y-auto max-h-80'
         onClick={toggleAccordion}
@@ -44,7 +44,7 @@ export default function ProjectCard({
             <span className='font-bold text-sm transition select-none flex flex-row items-center gap-1'>
               {title}
               <MdArrowForwardIos
-                className={`text-xs transition-transform duration-300 ${
+                className={`text-xs ease-in-out transition-all duration-500 opacity-20 group-hover:opacity-100  ${
                   isOpen ? 'rotate-90' : ''
                 }`}
               />
