@@ -26,11 +26,11 @@ export default function ExperienceCard({
   }
 
   return (
-    <section className='p-3 cursor-pointer border-2 border-black rounded-xl border-solid transition hover:bg-violet-200 snap-start'>
-      <div
-        className='flex items-start gap-2 overflow-y-auto max-h-80'
-        onClick={toggleAccordion}
-      >
+    <section
+      className='group p-3 cursor-pointer border-2 border-black border-solid rounded-xl transition hover:bg-violet-200'
+      onClick={toggleAccordion}
+    >
+      <div className='flex items-start gap-2 overflow-y-auto'>
         <Image
           className='overflow-hidden rounded-full border border-gray-400 border-solid'
           src={img}
@@ -44,7 +44,7 @@ export default function ExperienceCard({
             <span className='font-bold text-sm transition select-none flex flex-row items-center gap-1'>
               {title}
               <MdArrowForwardIos
-                className={`text-xs transition-transform duration-300 ${
+                className={`text-xs ease-in-out transition-all duration-400 opacity-20 group-hover:opacity-100 ${
                   isOpen ? 'rotate-90' : ''
                 }`}
               />
@@ -53,12 +53,12 @@ export default function ExperienceCard({
           <span className='text-xs text-gray-600'>{subtitle}</span>
           {/* Accordion content */}
           <div
-            className={`max-h-0 overflow-hidden transition-all duration-300 ease-in-out ${
+            className={`max-h-0 overflow-hidden transition-all duration-400 ease-in-out ${
               isOpen ? 'max-h-screen opacity-100' : 'opacity-0'
             }`}
           >
             <p
-              className={`text-xs text-gray-600 mt-1 transition-opacity duration-300 ${
+              className={`text-xs text-gray-600 mt-1 transition-opacity duration-400 ${
                 isOpen ? 'opacity-100' : 'opacity-0'
               }`}
             >

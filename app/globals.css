@@ -45,5 +45,6 @@ body {
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
       var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
     border-radius: 0.75rem /* 12px */;
+    padding: 1.25rem /* 20px */;
   }
 }

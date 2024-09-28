@@ -9,8 +9,8 @@ export default function Contact() {
     'p-3 rounded-xl border-2 border-black border-solid transition hover:bg-violet-200 hover:scale-110'
 
   return (
-    <section className='box-base-css p-5 mb-5 sm:col-start-4 sm:row-start-1 sm:col-span-4 sm:row-span-1'>
-      <div className='flex flex-row items-center justify-center h-full gap-5 text-center'>
+    <section className='box-base-css h-24 min-w-80 sm:col-start-4 sm:row-start-1 sm:col-span-4 sm:row-span-1'>
+      <div className='flex flex-row items-center justify-evenly'>
         <a
           className={style}
           href='https://www.linkedin.com/in/bradley-flores/'

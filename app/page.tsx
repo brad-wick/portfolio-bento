@@ -8,9 +8,9 @@ import Skills from './components/skills'
 
 export default function Home() {
   return (
-    <main className='h-full w-full p-10  xl:m-32 lg:m-16 md:m-8'>
+    <main className='h-full w-full max-w-5xl p-10 xl:m-32 lg:m-16 md:m-8'>
       {/* <ProfileBox /> */}
-      <div className='flex flex-col sm:hidden'>
+      <div className='flex flex-col gap-5 sm:hidden'>
         <Contact />
         <ProfileBox />
         <Introduction />
@@ -24,9 +24,9 @@ export default function Home() {
         <Contact />
         <Introduction />
         <Experience />
-        <Skills />
+        {/* <Skills />
         <Awards />
-        <Projects />
+        <Projects /> */}
       </div>
     </main>
   )

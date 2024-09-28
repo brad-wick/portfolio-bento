@@ -64,4 +64,36 @@ export const projectData = [
     ],
     image: tibiaGenius,
   },
+  {
+    title: 'Muse',
+    subtitle: 'Full-Stack Developer',
+    description:
+      "A web platform that aims to transform the way technology and culture are used, with the goal of creating a safe space where independent artists and cultural organizations can share the richness of Mexico's cultural identity.",
+    tags: [
+      'Next.js',
+      'Node.js',
+      'PostgreSQL',
+      'Prisma',
+      'Tailwind',
+      'StoryBook',
+      'Figma',
+    ],
+    image: muse,
+  },
+  {
+    title: 'TibiaGenius',
+    subtitle: 'Full-Stack Developer',
+    description:
+      "A website that recommends equipment variations depending on the player's character stats, vocation, hunting zone, and other factors.",
+    tags: [
+      'Next.js',
+      'Node.js',
+      'PostgreSQL',
+      'Prisma',
+      'Tailwind',
+      'StoryBook',
+      'Figma',
+    ],
+    image: tibiaGenius,
+  },
 ]
